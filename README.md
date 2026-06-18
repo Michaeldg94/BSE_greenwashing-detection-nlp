@@ -11,15 +11,15 @@ The notebook classifies climate-related sentences as **specific** or **non-speci
 ```
 .
 ├── notebooks/
-│   └── greenwashing_claim_classification_v2.ipynb   # the full analysis
+│   └── Armour_Canal_Goncalves_Guinea_Climate_Classification.ipynb   # the full analysis
 ├── data/
 │   └── cache/                # committed LLM caches -> keyless reproduction
 │       ├── zeroshot/         # GPT-4o and GPT-5.5 zero-shot predictions
 │       ├── fewshot/          # few-shot predictions and the k-curve
 │       └── generated/        # LLM-generated synthetic training data
 ├── outputs/                  # written at runtime (gitignored)
-│   ├── figures/              # PNGs, numbered 01_, 02_, ... in production order
-│   └── tables/               # exported CSV and JSON metrics
+│   ├── figures/              # PNG figures (descriptive names, e.g. master_comparison.png)
+│   └── tables/               # exported CSV / JSON tables
 ├── requirements.txt
 └── README.md
 ```
@@ -45,7 +45,7 @@ The dataset and every model (DistilRoBERTa, DeBERTa-v3 NLI, ClimateBERT, DistilB
 jupyter lab        # or: jupyter notebook
 ```
 
-Open `notebooks/greenwashing_claim_classification_v2.ipynb` and run all cells top to bottom. Figures are written to `outputs/figures/`, numbered in production order (`01_`, `02_`, ...); exported CSV and JSON tables go to `outputs/tables/`.
+Open `notebooks/Armour_Canal_Goncalves_Guinea_Climate_Classification.ipynb` and run all cells top to bottom. Figures are written to `outputs/figures/`; exported CSV and JSON tables go to `outputs/tables/`.
 
 The GPT-4o and GPT-5.5 sections read the cached predictions shipped under `data/cache/`, so the whole notebook reproduces with no API key and no cost.
 

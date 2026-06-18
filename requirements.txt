@@ -1,4 +1,4 @@
-# Minimal dependencies for greenwashing_claim_classification_v2.ipynb
+# Minimal dependencies for Armour_Canal_Goncalves_Guinea_Climate_Classification.ipynb
 pandas>=2.0
 numpy>=1.24
 scikit-learn>=1.3
