@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.env
+
+# Notebook-generated artifacts (produced at runtime); keep the folder structure
+/outputs/*
+!/outputs/figures/
+!/outputs/tables/
+/outputs/figures/*
+!/outputs/figures/.gitkeep
+/outputs/tables/*
+!/outputs/tables/.gitkeep
+
+# Smoke-test caches
+/data/cache/zeroshot/_smoke_*.csv
+/data/cache/fewshot/_smoke_*.csv
+/data/cache/generated/_smoke_*.csv
+
+.DS_Store
